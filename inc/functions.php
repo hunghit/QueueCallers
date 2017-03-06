@@ -43,7 +43,7 @@ function getCallers($command) {
 		for($i = ($ckeys[0] + 1); $i < $goto; $i++) {
 
                         $no = preg_replace("/ .*/", "", $command[$i]);
-                        $temp = preg_replace("/^[0-9]*\/. ", "", $command[$i]);
+                        $temp = preg_replace("/^[0-9]*\. /", "", $command[$i]);
                         $cid = preg_replace("/ \(.*/", "", $temp);
                         $temp = preg_replace("/.* \(wait: /", "", $command[$i]);
                         $wait = preg_replace("/,.*/", "", $temp);

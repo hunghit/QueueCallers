@@ -51,8 +51,8 @@ $members = getMembers($command);
         <select name="queue" onChange="document.qform.submit()">
           <option value="">--- Make your choice ---</option>
           <?php
-          $result = mysql_query(ASSQLQUEUE, $asdb) or die("Invalid query: ".mysql_error());
-          while($row = mysql_fetch_assoc($result)) {
+          $result = mysqli_query($asdb, ASSQLQUEUE ) or die("Invalid query: ".mysqli_error());
+          while($row = mysqli_fetch_assoc($result)) {
             $selected = isset($_POST['queue']) && trim($_POST['queue']) == $row['extension'] ? 'selected="selected"' : '';
             echo '<option value="'.$row['extension'].'" '.$selected.'>'.$row['descr'].' ('.$row['extension'].')</option>';
           }

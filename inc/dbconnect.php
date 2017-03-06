@@ -1,5 +1,5 @@
 <?php
-$asdb = @mysqli_connect(ASDBHOST.":".ASDBPORT, ASDBUSER, ASDBPASS, ASDBNAME);
+$asdb = @mysqli_connect(ASDBHOST, ASDBUSER, ASDBPASS, ASDBNAME, ASDBPORT);
 
 if (!$asdb) {
     die('Connect Error: ' . mysqli_connect_errno());

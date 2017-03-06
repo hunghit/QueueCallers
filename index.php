@@ -1,4 +1,7 @@
 <?php
+
+error_reporting( E_ALL ^ E_DEPRECATED );
+
 include_once("inc/defines.php");
 include_once("inc/functions.php");
 include_once("inc/dbconnect.php");

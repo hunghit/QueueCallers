@@ -24,10 +24,10 @@ $result = mysqli_query($asdb, $sql ) or die("Invalid query: ".mysqli_error());
 	<?php 
 	while($row = mysqli_fetch_assoc($result)) {
 		echo "<tr>";
-		echo "<td>" . $row['dst'] . "<td>";
-		echo "<td>" . $row['CUOCGOI'] . "<td>";
-		echo "<td>" . $row['THOIGIAN'] . "<td>";
-		echo "<td>" . $row['THOIGIANTB'] . "<td>";
+		echo "<td>" . $row['dst'] . "</td>";
+		echo "<td>" . $row['CUOCGOI'] . "</td>";
+		echo "<td>" . $row['THOIGIAN'] . "</td>";
+		echo "<td>" . $row['THOIGIANTB'] . "</td>";
 		echo "</tr>";
 	
 	}

@@ -21,6 +21,7 @@ $result = mysqli_query($asdb, $sql ) or die("Invalid query: ".mysqli_error());
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+<div class="container">
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -44,5 +45,6 @@ $result = mysqli_query($asdb, $sql ) or die("Invalid query: ".mysqli_error());
 	
 
 </table>
+</div>
 </body>
 </html>
